@@ -453,9 +453,9 @@ export default class DropdownAlert extends Component {
       const backgroundColor = this.getBackgroundColorForType(type);
       let { activeStatusBarBackgroundColor, translucent, updateStatusBar, activeStatusBarStyle, cancelBtnImageSrc, showCancel } = this.props;
       if (IS_ANDROID) {
-        if (translucent) {
-          style = [style, { paddingTop: StatusBar.currentHeight }];
-        }
+        // if (translucent) {
+        //   style = [style, { paddingTop: StatusBar.currentHeight }];
+        // }
         if (type !== 'custom') {
           activeStatusBarBackgroundColor = backgroundColor;
         }
