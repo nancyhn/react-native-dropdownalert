@@ -68,7 +68,7 @@ export default class DropdownAlert extends Component {
   static defaultProps = {
     onClose: null,
     onCancel: null,
-    closeInterval: 4000,
+    closeInterval: 2000,
     startDelta: -100,
     endDelta: 0,
     titleNumOfLines: 1,
@@ -463,7 +463,7 @@ export default class DropdownAlert extends Component {
       if (updateStatusBar) {
         if (IS_ANDROID) {
           StatusBar.setBackgroundColor(activeStatusBarBackgroundColor, true);
-          StatusBar.setTranslucent(translucent);
+          //StatusBar.setTranslucent(translucent);
         } else if (IS_IOS) {
           StatusBar.setBarStyle(activeStatusBarStyle, true);
         }
